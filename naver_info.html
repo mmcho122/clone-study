@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 회원가입</title>
+</head>
+
+<body>
+    <header>
+        <a href="#none" class="sr-only">본문으로 바로가기</a>
+        <h1><a href="#none">NAVER</a></h1>
+    </header>
+    <main>
+        <h2 class="sr-only">네이버 회원가입</h2>
+        <fieldset>
+            <form>
+                <h3>
+                    <label for="id">아이디</label>
+                </h3>
+                <input type="text" id="id">
+                <span>@naver.com</span>
+                <span>필수 정보입니다.</span>
+            </form>
+            <form>
+                <h3>
+                    <label for="pw">비밀번호</label>
+                </h3>
+                <input type="text" id="pw">
+                <span>필수 정보입니다.</span>
+            </form>
+            <form>
+                <h3>
+                    <label for="pw-re">비밀번호 재확인</label>
+                </h3>
+                <input type="text" id="pw-re">
+                <span>설정하려는 비밀번호가 맞는지 확인하기 위해 다시 입력 해주세요. 필수 정보입니다.</span>
+            </form>
+        </fieldset>
+        <fieldset>
+            <form>
+                <h3>
+                    <label for="name">이름</label>
+                </h3>
+                <input type="text" id="name">
+                <span>필수 정보입니다.</span>
+            </form>
+            <form>
+                <h3>생년월일</h3>
+                <label for="month-select"></label>
+                <input type="text" id="month-select" placeholder="년(4자)">
+                <div>
+                    <select name="month" id="month-box">
+                        <option value="month">월</option>
+                        <option value selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                <input type="text" id="day" placeholder="일">
+                <p>태어난 년도 4자리를 정확하게 입력하세요.</p>
+            </form>
+            <form>
+                <h3>성별</h3>
+                <select name="gender" id="gender-select">
+                    <option value selected>성별</option>
+                    <option value="male">남자</option>
+                    <option value="female">여자</option>
+                    <option value="none">선택안함</option>
+                </select>
+            </form>
+            <form>
+                <h3>
+                    <label for="email">본인 확인 이메일<span>(선택)</span></label>
+                </h3>
+                <input type="text" id="email" placeholder="선택입력">
+            </form>
+        </fieldset>
+        <fieldset>
+            <form>
+                <h3>
+                    <label for="phone">휴대전화</label>
+                </h3>
+                <div>
+                    <select name="nationNo" id="nationNo">
+                        <option value="">대한민국 +82</option>
+                        <option value="">대한민국 +82</option>
+                        <option value="">대한민국 +82</option>
+                    </select>
+                </div>
+                <input type="text" id="phone" placeholder="전화번호 입력">
+                <span>인증번호 받기</span>
+                <div>
+                    <label for="phone-ver"></label>
+                    <input type="text" id="phone-ver" placeholder="인증번호 입력하세요">
+                    <span>인증받은 후 인증번호를 입력해야 합니다.
+                        필수 정보입니다.</span>
+                </div>
+            </form>
+        </fieldset>
+        <a href="#none">가입하기</a>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#none">이용약관</a></li>
+            <li><a href="#none">개인정보처리방침</a></li>
+            <li><a href="#none">책임의 한계와 법적고지</a></li>
+            <li><a href="#none">회원정보 고객센터</a></li>
+        </ul>
+        <p><a href="https://www.navercorp.com/">naver</a> Copyright © <a href="#none">NAVER Corp.</a> All Rights
+            Reserved.</p>
+    </footer>
+</body>
+
+</html>

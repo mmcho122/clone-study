@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: 'Pretendard-Regular';
+    text-align: center;  
+}
+
+.title {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 40px;
+    padding: 40px;
+}
+
+.sub-title {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.sub-text {
+    font-family: 'Pretendard-Regular';
+    font-size: 15px;
+    color: #FF4500;
+}
+
+.form-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button-label {
+    padding: 10px 14px;
+    font-size: 14px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #dedede;
+    cursor: pointer;
+    transition: background 0.1s;
+}
+
+.button-input:hover + .button-label {
+    background-color: #FF4500;
+    color: #fff;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+.button-input:checked + .button-label {
+    background-color: #FF4500;
+    color: #fff;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.button-input {
+    display: none;
+}
+
+/* .button-input {
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    margin-top: -9px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0; 
+} */

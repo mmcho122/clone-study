@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form button 연습</title>
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/form-button.css">
+    <style>
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <form id="app">
+        <h1 class="title">form 요소 연습</h1>
+        <fieldset class="form-wrap">
+            <legend class="sub-title">
+                1. 좋아하는 과목을 고르세요
+                <span class="sub-text">(택 1)</span>
+            </legend>
+            <input type="radio" name="like-btn" id="like-button1" class="button-input">
+            <label for="like-button1" class="button-label">HTML</label>
+            <input type="radio" name="like-btn" id="like-button2" class="button-input">
+            <label for="like-button2" class="button-label">CSS</label>
+            <input type="radio" name="like-btn" id="like-button3" class="button-input">
+            <label for="like-button3" class="button-label">JavaScript</label>
+        </fieldset>
+        <fieldset class="form-wrap">
+            <legend class="sub-title">
+                2. 스터디할 과목을 고르세요
+                <span class="sub-text">(다중 선택 가능)</span>
+            </legend>
+            <input type="checkbox" name="todo-btn" id="todo-button1" class="button-input">
+            <label for="todo-button1" class="button-label">HTML</label>
+            <input type="checkbox" name="todo-btn" id="todo-button2" class="button-input">
+            <label for="todo-button2" class="button-label">CSS</label>
+            <input type="checkbox" name="todo-btn" id="todo-button3" class="button-input">
+            <label for="todo-button3" class="button-label">JavaScript</label>
+            <input type="checkbox" name="todo-btn" id="todo-button4" class="button-input">
+            <label for="todo-button4" class="button-label">Python</label>
+            <input type="checkbox" name="todo-btn" id="todo-button5" class="button-input">
+            <label for="todo-button5" class="button-label">Java</label>
+        </fieldset>
+        <fieldset class="form-wrap">
+            <legend class="sub-title">
+                3. 신분증을 첨부해주세요
+            </legend>
+            <input type="file" name="upload-btn" id="upload-button" class="button-input">
+            <label for="upload-button" class="button-label upload">이미지 업로드</label>
+        </fieldset>
+    </form>
+</body>
+
+</html>

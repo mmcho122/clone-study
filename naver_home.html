@@ -18,22 +18,24 @@
             </ul>
         </nav>
         <h1>Naver</h1>
-        <nav class="nav-link">
+        <div class="nav-link">
             <ul>
                 <li><a href="#none">네이버를 시작페이지로</a></li>
                 <li><a href="#none">쥬니어네이버</a></li>
                 <li><a href="#none">해피빈</a></li>
             </ul>
-        </nav>
-        <form>
+        </div>
+        <form action="get">
             <fieldset>
                 <legend>검색</legend>
-                <select>
-                    
+                <select name="search" id="search-option">
+                    <option value="default">통합검색</option>
+                    <option value="blog">블로그</option>
+                    <option value="cafe">카페</option>
                 </select>
                 <label for="search"></label>
                 <input type="search" id="search" placeholder="검색어를 입력해 주세요.">
-                <button type="button">검색</button>
+                <button type="submit">검색</button>
             </fieldset>
         </form>
         <nav>
@@ -57,8 +59,6 @@
             <dd><a href="#none">뉴스</a></dd>
             <dd><a href="#none">데이터랩</a></dd>
             <dd><a href="#none">메모</a></dd>
-        </dl>
-        <dl>
             <dt>ㅂ-ㅅ</dt>
             <dd><a href="#none">밴드</a></dd>
             <dd><a href="#none">부동산</a></dd>
@@ -66,8 +66,6 @@
             <dd><a href="#none">스포츠</a></dd>
             <dd><a href="#none">시리즈</a></dd>
             <dd><a href="#none">시리즈온</a></dd>
-        </dl>
-        <dl>
             <dt>ㅇ</dt>
             <dd><a href="#none">엑스퍼트</a></dd>
             <dd><a href="#none">영화</a></dd>
@@ -76,8 +74,6 @@
             <dd><a href="#none">웹소설</a></dd>
             <dd><a href="#none">웹툰</a></dd>
             <dd><a href="#none">인플루언서 검색</a></dd>
-        </dl>
-        <dl>
             <dt>ㅈ-ㅊ</dt>
             <dd><a href="#none">자동차</a></dd>
             <dd><a href="#none">주소록</a></dd>
@@ -85,8 +81,6 @@
             <dd><a href="#none">지도</a></dd>
             <dd><a href="#none">지식백과</a></dd>
             <dd><a href="#none">책</a></dd>
-        </dl>
-        <dl>
             <dt>ㅋ-ㅎ</dt>
             <dd><a href="#none">자동차</a></dd>
             <dd><a href="#none">주소록</a></dd>
@@ -94,8 +88,6 @@
             <dd><a href="#none">지도</a></dd>
             <dd><a href="#none">지식백과</a></dd>
             <dd><a href="#none">책</a></dd>
-        </dl>
-        <dl>
             <dt>A-Z</dt>
             <dd><a href="#none">Keep</a></dd>
             <dd><a href="#none">modoo!</a></dd>
@@ -104,8 +96,6 @@
             <dd><a href="#none">TV연예</a></dd>
             <dd><a href="#none">V LIVE</a></dd>
             <dd><a href="#none">VIBE</a></dd>
-        </dl>
-        <dl>
             <dt>사전</dt>
             <dd><a href="#none">사전</a></dd>
             <dd><a href="#none">국어사전</a></dd>
@@ -114,270 +104,258 @@
             <dd><a href="#none">중국어사전</a></dd>
             <dd><a href="#none">한자사전</a></dd>
             <dd><a href="#none">사전 더보기</a></dd>
+            <dt>ㄱ-ㅁ</dt>
         </dl>
         <dl>
-            <dt>ㄱ-ㅁ</dt>
             <dd>
                 <label for="wheather">날씨
-                    <input type="checkbox" name="wheather" value="wheather">
+                    <input type="checkbox" id="wheather">
                  </label>
             </dd>
             <dd>
                 <label for="mycar">네이버 MY CAR
-                    <input type="checkbox" name="mycar" value="mycar">
+                    <input type="checkbox" id="mycar">
                  </label>
             </dd>
             <dd>
                 <label for="ngame">네이버 게임
-                    <input type="checkbox" name="ngame" value="ngame">
+                    <input type="checkbox" id="ngame">
                  </label>
             </dd>
             <dd>
                 <label for="booking">네이버 예약
-                    <input type="checkbox" name="booking" value="booking">
+                    <input type="checkbox" id="booking">
                  </label>
             </dd>
             <dd>
                 <label for="premium">네이버 프리미엄콘텐츠
-                    <input type="checkbox" name="premium" value="premium">
+                    <input type="checkbox" id="premium">
                  </label>
             </dd>
             <dd>
                 <label for="plus">네이버플러스 멤버십
-                    <input type="checkbox" name="plus" value="plus">
+                    <input type="checkbox" id="plus">
                  </label>
             </dd>
             <dd>
                 <label for="news">뉴스
-                    <input type="checkbox" name="news" value="news">
+                    <input type="checkbox" id="news">
                  </label>
             </dd>
             <dd>
                 <label for="datalab">데이터랩
-                    <input type="checkbox" name="datalab" value="datalab">
+                    <input type="checkbox" id="datalab">
                  </label>
             </dd>
             <dd>
                 <label for="memo">메모
-                    <input type="checkbox" name="memo" value="memo">
+                    <input type="checkbox" id="memo">
                  </label>
             </dd>
-        </dl>
-        <dl>
             <dt>ㅂ-ㅅ</dt>
             <dd>
                 <label for="band">밴드
-                    <input type="checkbox" name="band" value="band">
+                    <input type="checkbox" id="band">
                  </label>
             </dd>
             <dd>
                 <label for="land">부동산
-                    <input type="checkbox" name="land" value="land">
+                    <input type="checkbox" id="land">
                  </label>
             </dd>
             <dd>
                 <label for="bookmark">북마크
-                    <input type="checkbox" name="bookmark" value="bookmark">
+                    <input type="checkbox" id="bookmark">
                  </label>
             </dd>
             <dd>
                 <label for="sports">스포츠
-                    <input type="checkbox" name="sports" value="sports">
+                    <input type="checkbox" id="sports">
                  </label>
             </dd>
             <dd>
                 <label for="nstore">시리즈
-                    <input type="checkbox" name="nstore" value="nstore">
+                    <input type="checkbox" id="nstore">
                  </label>
             </dd>
             <dd>
                 <label for="nstoreon">시리즈온
-                    <input type="checkbox" name="nstoreon" value="nstoreon">
+                    <input type="checkbox" id="nstoreon">
                  </label>
             </dd>
-        </dl>
-        <dl>
             <dt>ㅇ</dt>
             <dd>
                 <label for="expert">엑스퍼트
-                    <input type="checkbox" name="expert" value="expert">
+                    <input type="checkbox" id="expert">
                  </label>
             </dd>
             <dd>
                 <label for="movie">영화
-                    <input type="checkbox" name="movie" value="movie">
+                    <input type="checkbox" id="movie">
                  </label>
             </dd>
             <dd>
                 <label for="audioclip">오디오클립
-                    <input type="checkbox" name="audioclip" value="audioclip">
+                    <input type="checkbox" id="audioclip">
                  </label>
             </dd>
             <dd>
                 <label for="office">오피스
-                    <input type="checkbox" name="office" value="office">
+                    <input type="checkbox" id="office">
                  </label>
             </dd>
             <dd>
                 <label for="whale">웨일
-                    <input type="checkbox" name="whale" value="whale">
+                    <input type="checkbox" id="whale">
                  </label>
             </dd>
             <dd>
                 <label for="webnovel">웹소설
-                    <input type="checkbox" name="webnovel" value="webnovel">
+                    <input type="checkbox" id="webnovel">
                  </label>
             </dd>
             <dd>
                 <label for="comic">웹툰
-                    <input type="checkbox" name="comic" value="comic">
+                    <input type="checkbox" id="comic">
                  </label>
             </dd>
             <dd>
                 <label for="influencer">인플루언서 검색
-                    <input type="checkbox" name="influencer" value="influencer">
+                    <input type="checkbox" id="influencer">
                  </label>
             </dd>
-        </dl>
-        <dl>
             <dt>ㅈ-ㅊ</dt>
             <dd>
                 <label for="auto">자동차
-                    <input type="checkbox" name="auto" value="auto">
+                    <input type="checkbox" id="auto">
                  </label>
             </dd>
             <dd>
                 <label for="contact">주소록
-                    <input type="checkbox" name="contact" value="contact">
+                    <input type="checkbox" id="contact">
                  </label>
             </dd>
             <dd>
                 <label for="stock">증권
-                    <input type="checkbox" name="stock" value="stock">
+                    <input type="checkbox" id="stock">
                  </label>
             </dd>
             <dd>
                 <label for="map">지도
-                    <input type="checkbox" name="map" value="map">
+                    <input type="checkbox" id="map">
                  </label>
             </dd>
             <dd>
                 <label for="terms">지식백과
-                    <input type="checkbox" name="terms" value="terms">
+                    <input type="checkbox" id="terms">
                  </label>
             </dd>
             <dd>
                 <label for="book">책
-                    <input type="checkbox" name="book" value="book">
+                    <input type="checkbox" id="book">
                  </label>
             </dd>
-        </dl>
-        <dl>
             <dt>ㅋ-ㅎ</dt>
             <dd>
                 <label for="calendar">캘린더
-                    <input type="checkbox" name="calendar" value="calendar">
+                    <input type="checkbox" id="calendar">
                  </label>
             </dd>
             <dd>
                 <label for="dubbing">클로바더빙
-                    <input type="checkbox" name="dubbing" value="dubbing">
+                    <input type="checkbox" id="dubbing">
                  </label>
             </dd>
             <dd>
                 <label for="papago">파파고
-                    <input type="checkbox" name="papago" value="papago">
+                    <input type="checkbox" id="papago">
                  </label>
             </dd>
             <dd>
                 <label for="post">포스트
-                    <input type="checkbox" name="post" value="post">
+                    <input type="checkbox" id="post">
                  </label>
             </dd>
             <dd>
                 <label for="academic">학술정보
-                    <input type="checkbox" name="academic" value="academic">
+                    <input type="checkbox" id="academic">
                  </label>
             </dd>
             <dd>
                 <label for="airticket">항공권
-                    <input type="checkbox" name="airticket" value="airticket">
+                    <input type="checkbox" id="airticket">
                  </label>
             </dd>
             <dd>
                 <label for="hotel">호텔
-                    <input type="checkbox" name="hotel" value="hotel">
+                    <input type="checkbox" id="hotel">
                  </label>
             </dd>
-        </dl>
-        <dl>
             <dt>A-Z</dt>
             <dd>
                 <label for="keep">Keep
-                    <input type="checkbox" name="keep" value="keep">
+                    <input type="checkbox" id="keep">
                  </label>
             </dd>
             <dd>
                 <label for="modoo">modoo!
-                    <input type="checkbox" name="modoo" value="modoo">
+                    <input type="checkbox" id="modoo">
                  </label>
             </dd>
             <dd>
                 <label for="ndrive">MYBOX
-                    <input type="checkbox" name="ndrive" value="ndrive">
+                    <input type="checkbox" id="ndrive">
                  </label>
             </dd>
             <dd>
                 <label for="myfeed">MY구독
-                    <input type="checkbox" name="myfeed" value="myfeed">
+                    <input type="checkbox" id="myfeed">
                  </label>
             </dd>
             <dd>
                 <label for="entertain">TV연예
-                    <input type="checkbox" name="entertain" value="entertain">
+                    <input type="checkbox" id="entertain">
                  </label>
             </dd>
             <dd>
                 <label for="v">V LIVE
-                    <input type="checkbox" name="v" value="v">
+                    <input type="checkbox" id="v">
                  </label>
             </dd>
             <dd>
                 <label for="vibe">VIBE
-                    <input type="checkbox" name="vibe" value="vibe">
+                    <input type="checkbox" id="vibe">
                  </label>
             </dd>
-        </dl>
-        <dl>
             <dt>사전</dt>
             <dd>
                 <label for="dic">사전
-                    <input type="checkbox" name="dic" value="dic">
+                    <input type="checkbox" id="dic">
                  </label>
             </dd>
             <dd>
                 <label for="krdic">국어사전
-                    <input type="checkbox" name="krdic" value="krdic">
+                    <input type="checkbox" id="krdic">
                  </label>
             </dd>
             <dd>
                 <label for="endic">영어/영영사전
-                    <input type="checkbox" name="endic" value="endic">
+                    <input type="checkbox" id="endic">
                  </label>
             </dd>
             <dd>
                 <label for="jpdic">일본어사전
-                    <input type="checkbox" name="jpdic" value="jpdic">
+                    <input type="checkbox" id="jpdic">
                  </label>
             </dd>
             <dd>
                 <label for="cndic">중국어사전
-                    <input type="checkbox" name="cndic" value="cndic">
+                    <input type="checkbox" id="cndic">
                  </label>
             </dd>
             <dd>
                 <label for="hanja">한자사전
-                    <input type="checkbox" name="hanja" value="hanja">
+                    <input type="checkbox" id="hanja">
                  </label>
             </dd>
         </dl>
@@ -470,7 +448,7 @@
             <li><a href="#none">네이버 정책</a></li>
             <li><a href="#none">고객센터</a></li>
         </ul>
-        <a href="#none">ⓒ NAVER Corp.</a>
+        <p><small><a href="#none">ⓒ NAVER Corp.</a></small></p>
     </footer>
     
 </body>

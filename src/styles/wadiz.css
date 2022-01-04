@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --main-color: #90949c;
+    --point-color: #00b2b2;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.funding-search {
+    display: block;
+}
+
+.funding-lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin: 20px;
+}
+
+.img-first {
+    background: url('https://cdn.wadiz.kr/wwwwadiz/green001/2021/1228/20211228151928559_127708.jpg/wadiz/format/jpg/quality/80/optimize')
+    no-repeat 50% 50%;
+}
+
+.img-second {
+    background: url('https://cdn.wadiz.kr/wwwwadiz/green001/2021/1213/20211213160352781_133919.jpg/wadiz/format/jpg/quality/80/optimize')
+    no-repeat 50% 50%;
+}
+
+.img-third {
+    background: url('https://cdn.wadiz.kr/wwwwadiz/green001/2021/1201/20211201144418190_128175.jpg/wadiz/format/jpg/quality/80/optimize')no-repeat 50% 50%;
+}
+
+.img-fourth {
+    background: url('https://cdn.wadiz.kr/wwwwadiz/green001/2021/1201/20211201144418190_128175.jpg/wadiz/format/jpg/quality/80/optimize')no-repeat 50% 50%;
+}
+
+.img-fifth {
+    background: url("https://cdn.wadiz.kr/wwwwadiz/green001/2021/1227/20211227155051080_127663.png/wadiz/format/jpg/quality/80/optimize")no-repeat 50% 50%;
+}
+
+.img-sixth {
+    background: url("https://cdn.wadiz.kr/wwwwadiz/green001/2021/1222/20211222090224516_135356.jpg/wadiz/format/jpg/quality/80/optimize")
+    no-repeat 50% 50%;
+
+}
+
+.cardlist-img-wrap {
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    background-color: #eee;
+}
+
+.item-ad {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: 1px solid #fff;
+    border-radius: 9px;
+    background-color: rgba(0,0,0,.08);
+    width: 27px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    color: #fff;
+    font-size: 10px;
+}
+
+.item-title {
+    font-size: 17px;
+    font-weight: 700;
+    padding: 15px 0 10px;
+}
+
+.item-category, .item-makername {
+    margin-bottom: 10px;
+}
+
+.item-category, .item-makername, .item-percent-info, .item-remaining-info {
+    font-size: 14px;
+    font-weight: 500;
+    color: #90949c;
+}
+
+.item-category {
+    margin-right: 8px;
+}
+
+.item-makername::before {
+    content: '';
+    border-left: 2px solid #dadce0;
+    margin-right: 10px;
+    background-color: #dadce0;
+}
+
+.item-percent {
+    font-size: 17px;
+    color: #00b2b2;
+    font-weight: 700;
+}
+
+.progress-bar {
+    display: block;
+    margin: 5px 0;
+    width: 100%;
+    height: 5px;
+}
+
+.progress-bar::-webkit-progress-bar {
+    background-color: #e6eaed;
+}
+
+.progress-bar::-webkit-progress-value {
+    background-color: #00b2b2;
+}
+
+.item-amount::before {
+    content: '·';
+    margin-right: 2px;
+
+}
+
+.item-remaining-info {
+    float: right;
+}

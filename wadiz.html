@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wadiz</title>
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/wadiz.css">
+</head>
+
+<body>
+    <!-- <header>
+        <h1 class="logo">wadiz</h1>
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu"><a href="#">펀딩예정</a></li>
+                <li class="menu"><a href="#">펀딩하기</a></li>
+                <li class="menu"><a href="#">구매하기</a></li>
+                <li class="menu"><a href="#">더보기</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h2>새기고! 자르고! 돈 벌어주는! 레벨이 다른 레이저 커터&각인기 [비모]</h2>
+            <p>상상을 현실로 만들다</p>
+        </section>
+    </header>
+    -->
+    <main>
+        <section class="funding">
+            <article class="funding-search">
+                <h3 class="sr-only">펀딩 검색과 카테고리 선택을 할 수 있습니다.</h3>
+                <form class="search-input">
+                    <label for="search" class="sorting-select"></label>
+                    <input type="search" id="search">
+                    <select name="all" id="">
+                        <option value="all">전체</option>
+                        <option value="y">진행중</option>
+                        <option value="n">종료된</option>
+                </form>
+                </select>
+                <select name="order" class="sorting-select">
+                    <option value="recommend">추천순</option>
+                    <option value="amount">펀딩액순</option>
+                    <option value="closing">마감임박순</option>
+                    <option value="recent">최신순</option>
+                    <option value="support">응원참여자순</option>
+                </select>
+            </article>
+            <article class="funding-lists-container">
+                <h3 class="sr-only">펀딩 목록입니다</h3>
+                <ul class="funding-lists">
+                    <li class="funding-item">
+                        <a href="#">
+                            <div class="cardlist-img-wrap img-first">
+                                <span href="#none" class="item-ad">AD</span>
+                            </div>
+                            <p class="item-title"><a href="#none">[4만원대/듀얼충전] 뤂덕들 모여라! 잔망루피 무선 고속충전기</a></p>
+                            <span class="item-category">테크·가전</span>
+                            <span class="item-makername">(주)케이티씨에스</span>
+                        </a>
+                        <progress max="100" value="100" class="progress-bar"></progress>
+                        <div class="item-percent-info">
+                            <span class="item-percent">10510%</span>
+                            <span class="item-amount">52,552,400원</span>
+                            <span class="item-remaining-info">
+                                <span class="item-remaining">16일</span>
+                                <span class="item-remaining">남음</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="funding-item">
+                        <a href="#">
+                            <div class="cardlist-img-wrap img-second">
+                                <span href="#none" class="item-ad">AD</span>
+                            </div>
+                            <p class="item-title"><a href="#none">[잔망루PICK] 잔망 터지는 고데기! 루피 무선 미니 고데기!</a></p>
+                            <span class="item-category">테크·가전</span>
+                            <span class="item-makername">(주)명성</span>
+                        </a>
+                        <progress max="100" value="100" class="progress-bar"></progress>
+                        <div class="item-percent-info">
+                            <span class="item-percent">13201%</span>
+                            <span class="item-amount">66,009,501원</span>
+                            <span class="item-remaining-info">
+                                <span class="item-remaining">14일</span>
+                                <span class="item-remaining">남음</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="funding-item">
+                        <a href="#">
+                            <div class="cardlist-img-wrap img-third">
+                                <span href="#none" class="item-ad">AD</span>
+                            </div>
+                            <p class="item-title"><a href="#none">[펀치니들&미니어처키트] 귀여운 잔망루피 소품으로 우리 집을 해-삐하게!</a></p>
+                            <span class="item-category">게임·취미</span>
+                            <span class="item-makername">하비풀</span>
+                        </a>
+                        <progress max="100" value="100" class="progress-bar"></progress>
+                        <div class="item-percent-info">
+                            <span class="item-percent">3440%</span>
+                            <span class="item-amount">34,402,700원</span>
+                            <span class="item-remaining-info">
+                                <span class="item-remaining">13일</span>
+                                <span class="item-remaining">남음</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="funding-item">
+                        <a href="#">
+                            <div class="cardlist-img-wrap img-fourth">
+                                <span href="#none" class="item-ad">AD</span>
+                            </div>
+                            <p class="item-title"><a href="#none">[잔망루피] 미리 맞이하는 봄! 잔망루피 피크닉 오르골 스노우볼</a></p>
+                            <span class="item-category">캐릭터·굿즈</span>
+                            <span class="item-makername">(주)에즈워즈</span>
+                        </a>
+                        <progress max="100" value="100" class="progress-bar"></progress>
+                        <div class="item-percent-info">
+                            <span class="item-percent">4325%</span>
+                            <span class="item-amount">21,629,000원</span>
+                            <span class="item-remaining-info">
+                                <span class="item-remaining">20일</span>
+                                <span class="item-remaining">남음</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="funding-item">
+                        <a href="#">
+                            <div class="cardlist-img-wrap img-fifth">
+                                <span href="#none" class="item-ad">AD</span>
+                            </div>
+                            <p class="item-title"><a href="#none">[잔망루피 캠핑 캐리어 & 수납 세트] 잔망루피가 다 캐리한다!</a></p>
+                            <span class="item-category">여행·레저</span>
+                            <span class="item-makername">주식회사 굿앤디자인</span>
+                        </a>
+                        <progress max="100" value="90" class="progress-bar"></progress>
+                        <div class="item-percent-info">
+                            <span class="item-percent">90%%</span>
+                            <span class="item-amount">2,726,000원</span>
+                            <span class="item-remaining-info">
+                                <span class="item-remaining">27일</span>
+                                <span class="item-remaining">남음</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="funding-item">
+                        <a href="#">
+                            <div class="cardlist-img-wrap img-sixth">
+                                <span href="#none" class="item-ad">AD</span>
+                            </div>
+                            <p class="item-title"><a href="#none">[잔망루피 캠크닉] 원터치 텐트/해먹/의자 풀장착! 신나는 캠핑 스타뜨</a></p>
+                            <span class="item-category">여행·레저</span>
+                            <span class="item-makername">주식회사 굿앤디자인</span>
+                        </a>
+                        <progress max="100" value="84" class="progress-bar"></progress>
+                        <div class="item-percent-info">
+                            <span class="item-percent">84%</span>
+                            <span class="item-amount">2,531,900원</span>
+                            <span class="item-remaining-info">
+                                <span class="item-remaining">27일</span>
+                                <span class="item-remaining">남음</span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중앙정렬 연습</title>
+    <style>
+        .wrap {
+            outline: 1px solid blue;
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: 400;
+            width: 50%;
+            border-radius: 55px;
+            padding: 10px 30px;
+            margin: 0 auto;
+            text-align: center;
+            /* 블록요소: margin으로 좌우 정렬 */
+        }
+
+        img {
+            max-width: 200px;
+        }
+
+        a {
+            width: 100px;
+            /* 인라인요소: 크기와 마진, 패딩 상하 여백을 가질 수 없다 */
+            border: 1px solid #ddd;
+            padding: 30px;
+            margin: 30pxs;
+            /* 좌우는 먹는다? 왜? */
+        }
+
+        /* .btn {
+        border: 3px solid red;
+    } */
+        /* 우선순위 클래스 요소가 더 높다.
+    css 재선언할 때 특정도의 값이 같을 때 뒤에 우선순위가 더 높다.
+    위아래 특정도 값이 정말 같을 때 */
+
+        a {
+            border: 3px solid red;
+        }
+
+        /* 아래있는게 우선순위가 높아서
+    선택자가 같을 때!  */
+
+        button {
+            /* display: block; */
+            margin: 0 auto;
+            background-color: slateblue;
+            color: #ddd;
+            width: 200px;
+            padding: 20px;
+        }
+
+        /* 버튼만 가운데 위치하게 하기 */
+        strong {
+            /* margin: 0 auto; */
+            display: block;
+            text-align: center;
+            background-color: #eee;
+            width: 200px;
+            padding: 20px;
+        }
+
+        .box {
+            text-align: center;
+            /* display: flex;
+            justify-content: center; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>Heading</h1>
+        <p>Paragraph</p>
+        <a href="#" class="btn">Anchor</a><br>
+        <div class="box">
+            <button type="button">Button</button>
+            <button type="button">Button</button>
+        </div> 
+        <strong>Strong</strong><br>
+        <strong>Span</strong><br>
+        <span>
+            <b>Bold</b>
+            <i>Italic</i>
+        </span>
+        <br>
+        <img src="src/images/img_01.jpeg" alt="dummy">
+    </div>
+</body>
+
+</html>

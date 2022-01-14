@@ -1,0 +1,65 @@
+@charset "utf-8";
+@import 'variables','reset','target'; 
+ 
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    // background-color: red;
+    background:url($url + 'mvis_02.jpg') no-repeat fixed top right/cover;
+    padding: 20px 25px;
+}   
+
+
+.header {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        // display: block;
+        width: 100%;
+        max-width: 142px;
+    }
+
+    .header__menu__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .header__menu__nav {
+        display: flex;
+        gap: 20px;
+        height: 72px;
+        font-size: 17px;
+        line-height: 72px;
+    }
+
+    .header__nav__sub {
+        display: none;
+    }
+}
+
+.main {
+    .main__title {
+        color: #fff;
+
+        h2 {
+            font-size: 62px;
+            line-height: 70px;
+            width: 900px;
+            height: 140px;
+            
+        }
+
+        p {
+            font-size: 19px;
+            line-height: 26px;
+            margin-top: 22px;
+        }
+    }
+}
+
+

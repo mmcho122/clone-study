@@ -130,7 +130,6 @@ q:after {
 body {
   font-family: "Montserrat", sans-serif;
   background: url("../images/mvis_02.jpg") no-repeat fixed top right/cover;
-  padding: 20px 25px;
 }
 
 .header {
@@ -147,32 +146,68 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
 }
 .header .header__menu__nav {
   display: flex;
-  gap: 20px;
   height: 72px;
   font-size: 17px;
   line-height: 72px;
+}
+.header .header__menu__nav .header__nav__main {
+  margin-right: 20px;
 }
 .header .header__nav__sub {
   display: none;
 }
 
-.main .main__title {
+.main .main__container {
+  width: 100vw;
+  height: 50vw;
+  padding: 20px 25px;
+}
+.main .main__container .main__title {
   color: #fff;
 }
-.main .main__title h2 {
-  font-size: 62px;
-  line-height: 70px;
-  width: 900px;
-  height: 140px;
+.main .main__container .main__title h2 {
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 80px;
 }
-.main .main__title p {
-  font-size: 19px;
+.main .main__container .main__title p {
+  font-size: 22px;
   line-height: 26px;
-  margin-top: 22px;
+  margin-top: 30px;
+}
+
+.btnHam {
+  display: block;
+  width: 40px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.btnHam span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.2s linear;
+}
+
+.btnHam .b {
+  margin: 12px 0;
+}
+
+.btnHam:active .a {
+  transform: translateX(9px) rotate(32deg);
+}
+
+.btnHam:active .b {
+  width: 0;
+}
+
+.btnHam:active .c {
+  transform: translateX(9px) rotate(-32deg);
 }
 
 /*# sourceMappingURL=common.css.map */

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/styles/reset.css">
+    <!-- <link rel="stylesheet" href="./eric_reset.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <title>코드리뷰</title>
+    <style>
+        body {
+            font-family: 'Amatic SC', cursive;
+            background-color: blue;
+            color: #fff;
+        }
+
+        .main {
+            color: #eee;
+        }
+
+        /* main 밑에 있는 모든 자식요소 선택 */
+        /* .main > * {
+        } */
+
+        h1 {
+            font-size: 37px;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 37px;
+            line-height: 1.2;
+        }
+
+        @media all and (max-width: 600px) {
+            h1 {
+                font-size: 10vw;
+                color: red;
+            }
+        
+            h2 {
+                font-size: 6.16vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Header
+    </header>
+    <div class="main">
+        <h1>H1 HELLO WORLD Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus repudiandae quisquam
+            eaque nulla ratione quo sequi aut velit. At voluptas quas atque unde ea eligendi iure modi necessitatibus
+            nulla officiis!
+        </h1>
+        <h2>H2 HELLO WORLD Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit reiciendis in ipsum, sint,
+            sit harum cumque nesciunt vel iure dolores enim tenetur explicabo corrupti ratione officiis eveniet libero
+            numquam reprehenderit.
+        </h2>
+        <div class="btnWrap">
+            <button type="button">PREV</button>
+            <button type="button">NEXT</button>
+        </div>
+    </div>
+    <footer>
+        Footer
+    </footer>
+</body>
+
+</html>
